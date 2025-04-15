@@ -1,0 +1,18 @@
+BEGIN
+ INSERT INTO dept VALUES (91,'A','A');
+ INSERT INTO dept VALUES (90,'B','B');
+
+ 
+ UPDATE dept
+ SET dname = 'C'
+ WHERE deptno = 91;
+ 
+ COMMIT;
+EXCEPTION
+ WHEN OTHERS THEN ROLLBACK;
+END;
+/
+
+
+SELECT * FROM dept WHERE deptno >= 90;
+
