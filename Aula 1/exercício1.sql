@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON
+DECLARE
+    v_n1 NUMBER(3) := 2;
+    v_n2 NUMBER(3) := 5 ;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(v_n1 + v_n2);
+END;
+/
